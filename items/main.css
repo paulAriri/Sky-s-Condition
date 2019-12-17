@@ -1,0 +1,61 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(#141e30, #243b55); 
+    font-family: sans-serif;
+    color: #fff;
+}
+
+.container {
+    animation-name: open;
+    animation-duration: 2s;
+}
+
+@keyframes open {
+    0%{
+        bottom: -320px;
+        opacity: 0;
+        
+    }
+    100%{
+        
+        opacity:1;
+        bottom: 0px;
+    }
+}
+
+.loc, .temp {
+    height: 30vh;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.temp{
+    flex-direction: column;
+}
+
+.degree {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.degree span {
+    margin: 10px;
+    font-size: 32px;
+}
+
+.degree h2 {
+    font-size: 42px;
+}
